@@ -15,7 +15,7 @@
   <header class="header">
     <div class="logo-sidebarmenu">
       <div class="logo">
-        <img src="img/fit-go-logo.png" alt="">
+        <img src="fit-go-logo.png" alt="">
         <p>FIT-<span>GO</span></p>
       </div>
   
@@ -157,10 +157,10 @@
 
       <div class="program-box">
         <div class="program-image">
-          <img src="img/muscle.jpeg" alt="">
+          <img src="muscle.jpeg" alt="">
         </div>
         <div class="program-text">
-          <img src="img/muscle-icon.png" alt="">
+          <img src="muscle-icon.png" alt="">
           <h5>Flex Muscle</h5>
           <p>Creating Tension that's temporarily making the muscle fibers smaller or contracted.</p>
         </div>
@@ -168,10 +168,10 @@
 
       <div class="program-box">
         <div class="program-image">
-          <img src="img/Cardio.jpeg" alt="">
+          <img src="Cardio.jpeg" alt="">
         </div>
         <div class="program-text">
-          <img src="img/heart-icon.png" alt="">
+          <img src="heart-icon.png" alt="">
           <h5>Cardio Exercise</h5>
           <p>Exercise your heart rate up and keep rate up and keeps it up for a prolong period of time.</p>
         </div>
@@ -179,20 +179,20 @@
 
       <div class="program-box">
         <div class="program-image">
-          <img src="img/yoga.jpg" alt="">
+          <img src="yoga.jpg" alt="">
         </div>
         <div class="program-text">
-          <img src="img/yoga-icon.png" alt="">
+          <img src="yoga-icon.png" alt="">
           <h5>Basic Yoga</h5>
           <p>Diaphragmatic this is the most common breathing techniqiue you'll find in yoga.</p>
         </div>
       </div>
       <div class="program-box">
         <div class="program-image">
-          <img src="img/lifting-weight.jpeg" alt="">
+          <img src="lifting-weight.jpeg" alt="">
         </div>
         <div class="program-text">
-          <img src="img/weight-icon.png" alt="">
+          <img src="weight-icon.png" alt="">
           <h5>Weight Lifting</h5>
           <p>Attempts a maximum weight single lift of a barbell loaded with weight plates.</p>
         </div>
@@ -225,7 +225,23 @@
           <li><i class="bx bx-right-arrow-circle"></i>5 Days in a Week</li>
         </ul>
 
-        <button>Purchase Now <i class="bx bx-right-arrow-alt"></i></button>
+        <button class="purchase" id="purchase-basic">Purchase Now <i class="bx bx-right-arrow-alt"></i></button>
+      </div>
+
+      <div class="paymentmodal">
+        <div class="modal-content">
+          <h2>Bank Transfer Details</h2>
+          <p>Trasfer the exact amount to the account below;</p>
+          <div class="account-box"><span class="accno">1234567890</span>
+            <button onclick="copyaccount()" class="copy-btn"><i class="bx bx-copy"></i></button>
+          </div>
+          <div class="bank-info">
+            <p><strong>Bank;</strong>UBA</p>
+            <p><strong>Name;</strong>Fit Go</p>
+          </div>
+          <p class="note">Send Receipt to Payment@fit-go.com</p>
+          <p class="pay-close-btn">&times;</p>
+        </div>
       </div>
       
       <div class="plan-box premium">
@@ -241,9 +257,9 @@
           <li><i class="bx bx-right-arrow-circle"></i>5 Days in a Week</li>
         </ul>
 
-        <button class="premium-btn">Purchase Now <i class="bx bx-right-arrow-alt"></i></button>
-      
+        <button class="purchase" id="purchase-premuim" class="premium-btn">Purchase Now <i class="bx bx-right-arrow-alt"></i></button>
       </div>
+  
 
       <div class="plan-box">
         <i id="plan-box-icon" class="bx bx-happy"></i>
@@ -258,9 +274,11 @@
           <li><i class="bx bx-right-arrow-circle"></i>5 Days in a Week</li>
         </ul>
         
-          <button>Purchase Now <i class="bx bx-right-arrow-alt"></i></button>
-     
-         </div>
+          <button class="purchase" id="purchase-diamond">Purchase Now <i class="bx bx-right-arrow-alt"></i></button>
+
+      </div>
+      
+
     </div>
   </section>
 
@@ -328,7 +346,7 @@
     <div class="container">
       <div class="boxes">
         <div class="top">
-          <img src="img/my-photo.jpg" alt="" width="200px">
+          <img src="my-photo.jpg" alt="" width="200px">
           <div class="box-htext">
             <h5>Alex Johnson</h5>
             <p>Network Marketing</p>
@@ -345,7 +363,7 @@
       </div>
       <div class="boxes">
         <div class="top">
-          <img src="img/my-profile.jpg" alt="" width="200px">
+          <img src="my-profile.jpg" alt="" width="200px">
           <div class="box-htext">
             <h5>john steven</h5>
             <p>infomation system</p>
@@ -420,7 +438,7 @@
     <div class="footer-1">
       <div class="footer-text">
         <div class="logo">
-          <img src="img/fit-go-logo.png" alt="">
+          <img src="fit-go-logo.png" alt="">
           <h2>FIT-GO</h2>
         </div>
         <p>Lorem ipsum dolor sit amet Lorem  Lorem ipsum d
@@ -468,3 +486,42 @@
   <script src="index.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

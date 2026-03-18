@@ -14,6 +14,7 @@ html{
 
 
 
+
 :root{
   --main-color:#0228ff;
   --bg-color:#000000;
@@ -84,21 +85,24 @@ nav a button{
 nav a:hover{
   color: var(--main-color);
 }
+
+
 .home{
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
   background-color: var(--bg-color);
-  margin-top: 3rem;
+  height: 500px;
   position: relative;
   z-index: 2;
+  margin-top: 4rem;
 }
 
 
 .slider{
   width: 60vw;
-  height: 55vh;
+  height: 65vh;
   overflow: hidden;
 }
 .image-slider{
@@ -373,6 +377,7 @@ section{
   .plan{
     background-color: var(--bg-color);
     padding: 4rem 7%;
+    position: relative;
   }
   .plan-container{
     display: grid;
@@ -500,6 +505,60 @@ section{
   } */
   .plan-box ul i{
     font-size: 1rem;
+  }
+
+  .paymentmodal{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.925);
+    position: fixed;
+    z-index: 999;
+  }
+  .paymentmodal .modal-content{
+    position: relative;
+    text-align: center;
+    border: 1px solid red;
+  }
+  .paymentmodal .modal-content h2{
+    margin-bottom: 1rem;
+  }
+  .copy-btn{
+    background-color: transparent;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: .5s ease-in;
+  }
+  .copy-btn:active{
+    transform: scale(1.05);
+  }
+  .pay-close-btn{
+    color: red;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .account-box{
+    margin-top: .7rem;
+    margin-bottom: 1rem;
+  }
+  .note{
+    font-size: .8rem;
+    margin-top: 1rem;
+    background-color: rgba(255, 71, 4, 0.767);
+    padding: .7rem;
+    border: 1px solid red;
+    border-radius: 1rem;
   }
 
    /* schedule modal */
@@ -643,7 +702,7 @@ section{
   
   .contact{
     position: relative;
-    background-image: url(img/gym-contact.jpg);
+    background-image: url(gym-contact.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -856,7 +915,24 @@ section{
     .menu-link{
       display: none;
     }
-    
+    .home{
+      height: 100%;
+    }
+   /*  .slider{
+      width: 80vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .image-slider{
+      width: 80vw;
+      height: 80vh;
+    } */
+   
+    .gym-sta-container{
+      
+      grid-template-columns: repeat(auto-fit, 80%);
+      
+    }
     
     .sidebar-menu{
       position: fixed;

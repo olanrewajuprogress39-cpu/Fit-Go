@@ -55,3 +55,52 @@
     sidebarmenu.style.display = 'none'
 
   })
+
+    /* copy function */
+
+    const copybtn = document.querySelector('.copy-btn');
+    const accno = document.querySelector('.accno').innerText;
+
+    copybtn.addEventListener('click', function(){
+      navigator.clipboard.writeText(accno)
+    })
+
+    /* purchase */
+
+    const purchase = document.querySelector('.purchase');
+    const purchasepremuim = document.getElementById('purchase-premuim');
+    const purchasediamond = document.getElementById('purchase-diamond');
+    const paymentmodal = document.querySelector('.paymentmodal');
+    const payclosebtn = document.querySelector('.pay-close-btn');
+
+    purchase.addEventListener('click', function(){
+      paymentmodal.style.display = 'flex';
+    })
+    payclosebtn.addEventListener('click', function(){
+      paymentmodal.style.display = 'none';
+    })
+
+    purchasepremuim.addEventListener('click', function(){
+      paymentmodal.style.display = 'flex';
+    })
+    payclosebtn.addEventListener('click', function(){
+      paymentmodal.style.display = 'none';
+    })
+
+    purchasediamond.addEventListener('click', function(){
+      paymentmodal.style.display = 'flex';
+    })
+    payclosebtn.addEventListener('click', function(){
+      paymentmodal.style.display = 'none';
+    })
+
+
+
+    
+
+
+
+
+
+
+
